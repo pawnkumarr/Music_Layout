@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: lightgray;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        max-width: 1200px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        margin: auto;
+        background-color: brown;
+    }
+    
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        font-size: 20px;
+    }
+    main {
+        background-image: url("Music-BG.jpg");
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .main-content {
+        width: 60%;
+        padding-left: 70px;
+    }
+    .main-content h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .main-content p {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+    .main-content a {
+        padding: 10px 10px 10px 10px;
+        color:black;
+        text-decoration: none;
+        background-color: white;
+    }
+    nav {
+        background-color: purple;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+        
+    }
+    
+    .download {
+    margin-top: 40px;
+    margin-left: 40px;
+    max-width: 300px;
+    float: left;
+    color: white;
+}
+ #downloads tr:nth-child(even) {
+    background-color: purple;
+ }
+
+ #downloads tr:nth-child(odd) {
+    background-color: blueviolet ;
+ }
+</style>
+<body>
+    <div class="container">
+        <!-- top-header -->
+        <header class="top-header">
+            <h2> <span style="color: orange;">Music</span> Layout</h2>
+            <form action="" >
+                <label for="name">Username</label>
+                <input type="text" name="name" id="name">
+                <input type="submit" value="Search">
+            </form>
+        </header>
+        <!-- main -->
+        <main>
+            <div class="main-content">
+            <h2 style="color: orange;">Welcome To Music Store</h2>
+            <p>Musical improvisation is the creation of spontaneous music, often within (or based on) a pre-existing harmonic framework or chord progression. Improvisers use the notes of the chord, various scales that are associated with each chord.</p>
+            <a href="#">Read more</a>
+            </div>
+        </main>
+        <!-- navBar -->
+        <nav>
+            <a href="#" style="border-right: 2px solid white; padding: 0 60px 0 60px;"> <span style="color: orange;">Main page</a></span>
+            <a href="#" style="border-right: 2px solid white; padding: 0 60px 0 60px;">Videos</a>
+            <a href="#" style="border-right: 2px solid white; padding: 0 60px 0 60px;">Audios</a>
+            <a href="#" style="border-right: 2px solid white; padding: 0 60px 0 60px;">Albums</a>
+            <a href="#" style="border-right: 2px solid white; padding: 0 60px 0 60px;">Artists</a>
+            <a href="#" style=" padding: 0 20px 0 20px;">Contact</a> 
+            
+        </nav>
+        <!-- aside -->
+        <aside style="width: 30%; float: left; padding: 20px;" >
+            <h3 style="background-color: black; height: 40px; width: 300px; padding: 10px; margin-bottom: 30px; "> Customer Login </h3>
+            <form action="somefile.php" method="GET">
+                <table >dd
+                <tr>
+                    <td>
+                        <label style="color: white;">Email</label>
+                    </td>
+                    <td>
+                        <input type="Email" placeholder="Type Email Here">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label style="color: white;">Password</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Type Password Here">
+                    </td>
+                </tr>
+                <tr >
+                    <td colspan="2" style="text-align: right;">
+                        <input type="Submit" value="Login">
+                    </td>
+                </tr>
+            </table>
+                
+            </form>
+                <h3 style="background-color: black; height: 40px; width: 300px; margin-bottom: 30px; margin-top: 30px; padding: 10px;"> Blog Entries </h3>
+            <h5 style="color: orange; font-size: 20px;">Music has many different fundamentals or elements.</h5>
+            <p>Depending on the definition of "element" being used, these can include: pitch, beat or pulse, tempo, of voices, timbre or color, dynamics, expression, articulation, form and structure.</p>
+            <hr style="margin-bottom: 20px; margin-top: 20px;">
+            <h5 style="color: orange; font-size: 20px;">Harmony refers to the "vertical" sounds of pitches in music.</h5>
+            <p>Rhythm is the arrangement of sounds and silences in time. Meter animates time in regular pulse groupings, called measures or bars, which in Western classical, popular and traditional music.</p>
+            <hr style="margin-bottom: 20px; margin-top: 20px;">
+            <h5 style="color: orange; font-size: 20px;">Musical texture is the overall sound of a piece of music or song.</h5>
+            <p>The texture of a piece or song is determined by how the melodic, rhythmic, and harmonic materials are combined in a composition.</p>
+            <hr style="margin-bottom: 20px; margin-top: 20px;">
+            <img src="https://www.freetimelearning.com/html/images/html.jpg" height="40px" width="120px">
+            <img src="https://dyncode.co.za/wp-content/uploads/html-css.jpg" height="40px" width="120px">
+            <hr style="margin-bottom: 20px; margin-top: 20px;">
+            <input type="submit" value="View All">
+        </aside>
+        <!-- right side content -->
+        <div class="right-side" style="float: left; width: 70%;">
+            <h4 style="background-color: black; padding: 20px; margin-top: 20px;">Latest Albums</h4>
+            <div class="books" style="display: flex; flex-direction: row; ">
+                <article class="art1" style="margin-right: 70px; margin-top: 20px;">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/mixtape-album-cover-art-design-template-68450756e786f85861314fa7d49d8366_screen.jpg?ts=1586223871" height="150px" width="120px">
+                    <p style="color: orange;"><b>Album No. 1</b></p>
+                    <p>Artist Name 1</p>
+                    <input type="submit" value="More">
+                </article>
+
+                    <article class="art2" style="margin-right: 70px; margin-top: 20px;">
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/mixtape-album-cover-art-design-template-d03512003819014abb469759d4bb3b3a_screen.jpg?ts=1586484308" height="150px" width="120px">
+                        <p style="color: orange;"><b>Album No. 2</b></p>
+                        <p>Artist Name 2</p>
+                        <input type="submit" value="More">
+                </article>
+
+                <article class="art3" style="margin-right: 70px; margin-top: 20px;">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pink-cloud-cd-cover-music-design-template-258c703e9959b4635649e3944488c688_screen.jpg?ts=1612230560" height="150px" width="120px">
+                    <p style="color: orange;"><b>Album No. 3</b></p>
+                    <p>Artist Name 3</p>
+                    <input type="submit" value="More">
+                </article>
+            </div>
+        </div>
+        <!-- rignt side bottom 1 -->
+        <div class="right-side" style="float: left; width: 30%;">
+        <div class="news" style="display: flex; flex-direction: column; ">
+            <h4 style="background-color: black; padding: 20px; margin-top: 40px;">News</h4>
+                <article class="title1" style="margin-top: 20px;">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/basketball-mixtape-album-cover-art-template-design-a91c1cb0d5fde3c0b459a8ab2604a96a_screen.jpg?ts=1598299880" height="150px" width="120px" style="float: left; margin-top: 20px;">
+                    <p style="color: orange; font-size: 15px; margin-left: 130px; margin-top: 20px;"><b>News Title 1</b></p>
+                    <p style="font-size: 12px; margin-left: 130px; margin-top: 15px;">14-oct-2020</p>
+                    <p style="font-size: 12px; margin-left: 130px; margin-top: 10px;">Multiple independent melody lines that interweave together, which are sung or played at the same time</p> 
+                </article>
+
+                <article  class="title2"  style="margin-top: 20px;">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cannabis-rap-mixtape-album-cover-template-design-a0d1f9e3de1ffb8401b3c5317a848289_screen.jpg?ts=1601609468" height="150px" width="120px" style="float: left; margin-top: 20px;">
+                    <p style="color: orange; font-size: 15px; margin-left: 130px; margin-top: 20px;"><b>News Title 2</b></p>
+                    <p style="font-size: 12px; margin-left: 130px; margin-top: 15px;">15-oct-2020</p>
+                    <p style="font-size: 12px; margin-left: 130px; margin-top: 10px;">Multiple independent melody lines that interweave together, which are sung or played at the same time</p>
+                </article>
+            </div>
+            <input type="submit" value="View All" style="margin-top: 40px;">
+        </div>
+        <!-- right side bottom 2 -->
+        <section class="download">
+            <table style="width: 370px; line-height: 3.8;" id="downloads" cellspacing="1" cellpadding="1 ">
+                <tr>
+                    <th colspan="2" style="background-color: black; color: yellow; width: 100%; font-size: 20px;">
+                        Top downloads
+                    </th>
+                    <tr>
+                    <td style="text-align: center;">
+                        Sony Title by Artist 1
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="submit" name="" id="" value="Downloads">
+                    </td>
+                </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            Sony Title by Artist 1
+                        </td>
+                        <td style="text-align: center;">
+                            <input type="submit" name="" id="" value="Downloads">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            Sony Title by Artist 2
+                        </td>
+                        <td style="text-align: center;">
+                            <input type="submit" name="" id="" value="Downloads">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            Sony Title by Artist 3
+                        </td>
+                        <td style="text-align: center;">
+                            <input type="submit" name="" id="" value="Downloads">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            Sony Title by Artist 4
+                        </td>
+                        <td style="text-align: center;">
+                            <input type="submit" name="" id="" value="Downloads">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            Sony Title by Artist 5
+                        </td>
+                        <td style="text-align: center;">
+                            <input type="submit" name="" id="" value="Downloads">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                            Sony Title by Artist 6
+                        </td>
+                        <td style="text-align: center;">
+                            <input type="submit" name="" id="" value="Downloads">
+                        </td>
+                    </tr>
+                    
+                </tr>
+            </table>
+        </section>
+        <footer style="clear: both; background-color: tan; height: 60px; text-align: center; font-size: 15px; padding: 15px;">
+            <p>Home | Videos | Audios | Artists | Contact </p>
+            <p> Copyright Your Company name | Designed by 123.com</p>
+        </footer>
+    </div>
+</body>
+</html>
